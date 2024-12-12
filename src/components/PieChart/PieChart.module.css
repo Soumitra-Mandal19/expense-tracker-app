@@ -1,0 +1,39 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.labelContainer {
+    display: flex;
+    column-gap: 16px;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+    color: #ffffff;
+}
+
+.foodLabel {
+    background-color: #A000FF;
+    height: 8px;
+    width: 26px;
+}
+
+.entertainmentLabel {
+    background-color: #FF9304;
+    height: 8px;
+    width: 26px;
+}
+
+.travelLabel {
+    background-color: #FDE006;
+    height: 8px;
+    width: 26px;
+}

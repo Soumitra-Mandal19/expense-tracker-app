@@ -1,0 +1,59 @@
+.root {
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #9B9B9B;
+    width: 355.41px;
+    height: 181px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    font-family: 'Ubuntu';
+}
+
+.container {
+    display: flex;
+    font-size: 30px;
+    column-gap: 8px;
+}
+
+.title {
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+
+.wallet {
+    color: #9DFF5B;
+    font-weight: 700;
+}
+
+.walletButton {
+
+    background: linear-gradient(90deg, #B5DC52 0%, #89E148 100%);
+    color: #FFFFFF;
+    width: 167.65px;
+    height: 38px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+}
+
+.expense {
+    color: #F4BB4A;
+    font-weight: 700;
+}
+
+.expenseButton {
+    background: linear-gradient(90deg, #FF9595 0%, #FF4747 80%, #FF3838 100%);
+    color: #FFFFFF;
+    width: 167.65px;
+    height: 38px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}

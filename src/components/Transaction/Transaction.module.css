@@ -1,0 +1,103 @@
+.root {
+    display: flex;
+    border-bottom: 1px solid #9B9B9B;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: Open Sans;
+}
+
+.detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.categoryIconBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    width: 38px;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+}
+
+.categoryIcon {
+    height: 24px;
+    width: 24px;
+}
+
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    align-items: flex-start;
+}
+
+.itemName {
+    color: #000000;
+}
+
+.date {
+    color: #9B9B9B;
+}
+
+.amountContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.amount {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    color: #F4BB4A;
+}
+
+.iconContainer {
+    display: flex;
+    column-gap: 8px;
+    padding: 4px;
+}
+
+.deleteIconBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+    width: 37px;
+    background-color: red;
+    border-radius: 15px;
+    border: none;
+}
+
+.deleteIcon {
+    color: white;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.editIconBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+    width: 37px;
+    background-color: #F4BB4A;
+    border-radius: 15px;
+    border: none;
+}
+
+.editIcon {
+    color: white;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html,
+body {
+  height: 99% !important;
+  margin: 0;
+  background: #3B3B3B;
+}
+#root,
+#__next {
+  isolation: isolate;
+}

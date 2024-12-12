@@ -1,0 +1,79 @@
+.root {
+    border-radius: 15px;
+    border-color: 1px solid black;
+    background: #EFEFEFD9;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-family: Ubuntu;
+}
+
+.dialogBody {
+    width: fit-content;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 203px;
+    height: 31px;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin: 10px;
+    padding: 10px;
+    color: #919191;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+}
+
+.title {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34.47px;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.expenseButton {
+    background: #F4BB4A;
+    border: none;
+    width: 150px;
+    height: 51px;
+    gap: 0px;
+    border-radius: 15px;
+    opacity: 0px;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    margin-right: 20px;
+    
+}
+
+.cancelButton {
+    background: #D9D9D9;
+    border: none;
+    width: 112px;
+    height: 51px;
+    top: 493px;
+    left: 401px;
+    gap: 0px;
+    border-radius: 15px;
+    opacity: 0px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-family: Open Sans;
+    font-size: 16px;
+    line-height: 21.79px;
+}

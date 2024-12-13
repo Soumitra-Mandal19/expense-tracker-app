@@ -8,3 +8,10 @@
     justify-content: center;
     height: 100%;
 }
+
+.noTransactions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}

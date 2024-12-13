@@ -44,34 +44,35 @@ export const TransactionList = () => {
 
 
     return (
-        <>
-            <div className={styles.root}>
+        <div className={styles.root}>
+            {transactions.length > 0 ? <>
                 <div className={styles.transactions}>
-                {transactions.slice((pageNumber * PAGE_SIZE - PAGE_SIZE), (pageNumber * 3)).map((transaction, index) => {
-                    return (<Transaction key={index} {...transaction} onDelete={onDelete} onEdit={onEdit} />)
-                })}
+                    {transactions.slice((pageNumber * PAGE_SIZE - PAGE_SIZE), (pageNumber * 3)).map((transaction, index) => {
+                        return (<Transaction key={index} {...transaction} onDelete={onDelete} onEdit={onEdit} />)
+                    })}
                 </div>
                 <div className={styles.pager}>
-                <div className={styles.paginationWrapper}>
-                    <button disabled={pageNumber === 1}
-                        onClick={() => setPageNumber(
-                            (prev) => prev - 1 < 1 ? prev : prev - 1
-                        )}>
-                        <IoIosArrowRoundBack />
-                    </button>
-                    <p>{pageNumber}</p>
-                    <button disabled={transactions.length < (pageNumber * PAGE_SIZE)}
-                        onClick={() => setPageNumber(
-                            (prev) => transactions.length < (prev * PAGE_SIZE) ? prev : prev + 1
-                        )}>
-                        <IoIosArrowRoundForward />
-                    </button>
+                    <div className={styles.paginationWrapper}>
+                        <button disabled={pageNumber === 1}
+                            onClick={() => setPageNumber(
+                                (prev) => prev - 1 < 1 ? prev : prev - 1
+                            )}>
+                            <IoIosArrowRoundBack />
+                        </button>
+                        <p>{pageNumber}</p>
+                        <button disabled={transactions.length < (pageNumber * PAGE_SIZE)}
+                            onClick={() => setPageNumber(
+                                (prev) => transactions.length < (prev * PAGE_SIZE) ? prev : prev + 1
+                            )}>
+                            <IoIosArrowRoundForward />
+                        </button>
+                    </div>
+
                 </div>
-            </div>
                 {/* EditExpenseModal will have isOpen set to true when expense state variable is not null (!= null || ! === undefined) */}
                 {(expense != null) ? <EditExpenseModal expense={expense} onCancelButtonClicked={onCancelButtonClicked} handleAddExpenseClick={handleAddExpenseClick} /> : null}
-            </div>
-            
-        </>
+            </> : <div className={styles.noTransactions}>No Transactions!</div>}
+        </div>
+
     )
 }

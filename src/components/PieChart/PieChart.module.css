@@ -12,6 +12,10 @@
     font-size: 12px;
 }
 
+.noTransactions {
+    color: #ffffff;
+}
+
 .label {
     display: flex;
     justify-content: center;

@@ -12,6 +12,13 @@
     height: 225px;
 }
 
+.noTransactions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 .pager {
     display: flex;
     align-items: center;

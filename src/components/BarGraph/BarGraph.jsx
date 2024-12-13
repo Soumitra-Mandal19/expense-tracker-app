@@ -34,7 +34,7 @@ export const BarGraph = () => {
 
   return (
     <div className={styles.root}>
-      <BarChart
+      {expenses.length > 0 ? <BarChart
         colors={["#8784D2"]}
         borderRadius={20}
         dataset={data.sort((a, b) => a.category < b.category ? -1 : 1)}
@@ -43,7 +43,7 @@ export const BarGraph = () => {
         layout="horizontal"
         bottomAxis={null}
         {...chartSetting}
-      />
+      /> : <div className={styles.noTransactions}>No Transactions!</div>}
     </div>
   );
 }

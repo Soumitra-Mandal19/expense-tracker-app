@@ -91,7 +91,7 @@ export const EditExpenseModal = ({ expense, onCancelButtonClicked, handleAddExpe
                                 <div><input className={styles.input} placeholder="dd/mm/yyyy" type="date" value={date} onChange={(e) => setDate(e.target.value)}></input></div>
                             </div>
                             <div className={styles.row}>
-                                <div><button onClick={onClick} className={styles.expenseButton}>Add Expense</button></div>
+                                <div><button onClick={onClick} className={styles.expenseButton}>Edit Expense</button></div>
                                 <div><button onClick={onCancelButtonClicked} className={styles.cancelButton}>Cancel</button></div>
                             </div>
                         </div>

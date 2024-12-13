@@ -38,6 +38,8 @@ export const PieChart = () => {
     return `${(percent * 100).toFixed(0)}%`;
   };
 
+  if (expenses.length === 0) return <div className={styles.noTransactions}>No Transactions!</div>
+
   return (
     <div className={styles.root}>
       <Pie
